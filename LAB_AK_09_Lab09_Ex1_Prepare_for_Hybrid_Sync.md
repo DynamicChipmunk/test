@@ -646,8 +646,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     VM environments, you just have to right-click at the command prompt to both
     paste in the copied command AND run it.
 
-    ‎Set-ADForest -identity adatum.com -UPNSuffixes
-    \@{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}
+    `Set-ADForest -identity adatum.com -UPNSuffixes \@{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}`
 
 8.  Copy the following command from Notepad, paste it into PowerShell at the
     command prompt, and then run it.  
