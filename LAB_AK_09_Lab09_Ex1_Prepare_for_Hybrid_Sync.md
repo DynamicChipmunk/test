@@ -812,7 +812,7 @@ To save you from having to manually type in the commands (which are quite length
     method to NTLM and to require external clients to use SSL to make the
     connection:
 
-    `Set-OutlookAnywhere -Identity "LON-EX1\Rpc (Default Web Site)" -ExternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx -ExternalClientsRequireSsl \$true -ExternalClientAuthenticationMethod NTLM -InternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx -InternalClientsRequireSsl \$true -InternalClientAuthenticationMethod NTLM`
+    `Set-OutlookAnywhere -Identity "LON-EX1\Rpc (Default Web Site)" -ExternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx -ExternalClientsRequireSsl $true -ExternalClientAuthenticationMethod NTLM -InternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx -InternalClientsRequireSsl $true -InternalClientAuthenticationMethod NTLM`
 
 15. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
