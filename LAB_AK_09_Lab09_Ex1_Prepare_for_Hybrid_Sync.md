@@ -654,7 +654,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎This command changes all existing adatum.com accounts to the new UPN
     \@xxxUPNxxx.xxxCustomDomainxxx.xxx domain:  
     ‎  
-    `Set-ADUser -Filter * -Properties SamAccountName | ForEach-Object {Set-ADUser $_ -UserPrincipalName ($_.SamAccountName + "@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}`
+    `Get-ADUser -Filter * -Properties SamAccountName | ForEach-Object {Set-ADUser $_ -UserPrincipalName ($_.SamAccountName + "@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}`
 
 9.  Wait for PowerShell to complete the prior command and return to the command
     prompt, and then close the Windows PowerShell window.
